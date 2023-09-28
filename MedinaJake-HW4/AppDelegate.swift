@@ -4,6 +4,9 @@
 //
 //  Created by Jake Medina on 9/26/23.
 //
+//  Project: MedinaJake-HW4
+//  EID: jrm7784
+//  Course: CS371L
 
 import UIKit
 

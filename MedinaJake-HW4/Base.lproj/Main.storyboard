@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6SX-dw-d9x">
-                                <rect key="frame" x="0.0" y="175" width="430" height="611"/>
+                                <rect key="frame" x="0.0" y="134" width="430" height="683"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -43,13 +43,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="heyo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcX-Fa-P0o">
-                                <rect key="frame" x="194" y="103" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -114,7 +107,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-SK-Z3q">
-                                <rect key="frame" x="191" y="353" width="48" height="21"/>
+                                <rect key="frame" x="0.0" y="353" width="430" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -126,13 +119,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="cAp-WS-y0y"/>
                     <connections>
+                        <outlet property="operand1Field" destination="wU3-Td-Msa" id="Z6M-LE-YgP"/>
+                        <outlet property="operand2Field" destination="mIO-3f-ZDV" id="ZDS-IM-54y"/>
                         <outlet property="operatorLabel" destination="WlM-69-yBA" id="Cdu-5N-PxV"/>
                         <outlet property="resultLabel" destination="cKt-SK-Z3q" id="ylC-hM-B2Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tn2-Tv-JBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3659" y="3"/>
+            <point key="canvasLocation" x="3658.6046511627906" y="2.5751072961373391"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P2n-uZ-Y49">

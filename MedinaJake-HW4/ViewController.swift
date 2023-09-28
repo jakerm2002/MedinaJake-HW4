@@ -4,6 +4,9 @@
 //
 //  Created by Jake Medina on 9/26/23.
 //
+//  Project: MedinaJake-HW4
+//  EID: jrm7784
+//  Course: CS371L
 
 import UIKit
 
@@ -41,6 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
            let destination = segue.destination as? CalculatorViewController,
            let operationIndex = tableView.indexPathForSelectedRow?.row
         {
+            // send the correct operator symbol to the CalcVC
             destination.whichOperator = operationSymbols[operationIndex]
         }
     }
