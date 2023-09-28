@@ -12,7 +12,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     
     let operations:[String] = ["Add", "Subtract", "Multiply", "Divide"]
+    let operationSymbols:[String] = ["+", "-", "*", "/"]
     let textCellIdentifier = "TextCell"
+    let calcSegueIdentifier = "CalcSegueIdentifier"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +35,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
            
        return cell
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == calcSegueIdentifier,
+           let destination = segue.destination as? CalculatorViewController,
+           let operationIndex = tableView.indexPathForSelectedRow?.row
+        {
+            destination.whichOperator = operationSymbols[operationIndex]
+        }
+    }
 
 }
 

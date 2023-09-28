@@ -8,11 +8,20 @@
 import UIKit
 
 class CalculatorViewController: UIViewController {
-
+    
+    @IBOutlet weak var operatorLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    var whichOperator = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        operatorLabel.text = whichOperator
+        super.viewWillAppear(animated)
     }
     
 
@@ -26,4 +35,6 @@ class CalculatorViewController: UIViewController {
     }
     */
 
+    @IBAction func calculatePressed(_ sender: Any) {
+    }
 }

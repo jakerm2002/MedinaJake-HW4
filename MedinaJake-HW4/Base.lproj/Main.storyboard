@@ -38,7 +38,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="6Wt-B7-anL" kind="show" id="mk3-Pi-jjS"/>
+                                            <segue destination="6Wt-B7-anL" kind="show" identifier="CalcSegueIdentifier" id="mk3-Pi-jjS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="2842.3255813953488" y="3.218884120171674"/>
         </scene>
-        <!--View Controller-->
+        <!--Calculator View Controller-->
         <scene sceneID="IOz-Sh-oau">
             <objects>
-                <viewController id="6Wt-B7-anL" sceneMemberID="viewController">
+                <viewController id="6Wt-B7-anL" customClass="CalculatorViewController" customModule="MedinaJake_HW4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ySz-Ct-XQt">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,6 +109,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculatePressed:" destination="6Wt-B7-anL" eventType="touchUpInside" id="4Kc-Z7-zT9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-SK-Z3q">
                                 <rect key="frame" x="191" y="353" width="48" height="21"/>
@@ -122,6 +125,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="cAp-WS-y0y"/>
+                    <connections>
+                        <outlet property="operatorLabel" destination="WlM-69-yBA" id="Cdu-5N-PxV"/>
+                        <outlet property="resultLabel" destination="cKt-SK-Z3q" id="ylC-hM-B2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tn2-Tv-JBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
