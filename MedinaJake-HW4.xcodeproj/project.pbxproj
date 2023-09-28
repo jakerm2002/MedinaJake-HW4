@@ -13,6 +13,7 @@
 		66919AB12AC38AC2006B58A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66919AAF2AC38AC2006B58A2 /* Main.storyboard */; };
 		66919AB32AC38AC3006B58A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66919AB22AC38AC3006B58A2 /* Assets.xcassets */; };
 		66919AB62AC38AC3006B58A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66919AB42AC38AC3006B58A2 /* LaunchScreen.storyboard */; };
+		66AE55F12AC4FF2B00283104 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE55F02AC4FF2B00283104 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		66919AB22AC38AC3006B58A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66919AB52AC38AC3006B58A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66919AB72AC38AC3006B58A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66AE55F02AC4FF2B00283104 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		66919AA82AC38AC2006B58A2 /* MedinaJake-HW4 */ = {
 			isa = PBXGroup;
 			children = (
+				66AE55F02AC4FF2B00283104 /* CalculatorViewController.swift */,
 				66919AA92AC38AC2006B58A2 /* AppDelegate.swift */,
 				66919AAB2AC38AC2006B58A2 /* SceneDelegate.swift */,
 				66919AAD2AC38AC2006B58A2 /* ViewController.swift */,
@@ -140,6 +143,7 @@
 			files = (
 				66919AAE2AC38AC2006B58A2 /* ViewController.swift in Sources */,
 				66919AAA2AC38AC2006B58A2 /* AppDelegate.swift in Sources */,
+				66AE55F12AC4FF2B00283104 /* CalculatorViewController.swift in Sources */,
 				66919AAC2AC38AC2006B58A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
